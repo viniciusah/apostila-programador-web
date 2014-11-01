@@ -2,45 +2,54 @@
 % Utilizamos o template Latex disponível aqui:
 % http://www.ime.usp.br/~tassio/arquivo/latex/apostila.pdf
 
-    \documentclass[%draft,
-    a4paper,11pt,twoside]{article}
+\documentclass[%draft,
+a4paper,11pt,oneside]{article}
+
+%\usepackage[latin1]{inputenc} % acentuacao
+%\usepackage[T1]{fontenc}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
 %    \input{head}
-    \title{\LaTeX ação\\{\footnotesize Programador Web}}
-    \author{Vinícius Alves Hax} % por enquanto
-    \hypersetup{baseurl={http://www.ime.usp.br/~tassio/apostila.pdf},
-    pdftitle={Programador Web},
-    pdfauthor={Vinícius Alves Hax},
-    pdfkeywords={PHP, HTML, CSS, Programação, Web},
-    pdflang={pt-BR (Portuguese)},
-    unicode=true}
-    \begin{document}
-    \maketitle
-    \thispagestyle{empty}
-    \clearpage
+\title{\LaTeX ação\\{\footnotesize Programador Web}}
+\author{Vinícius Alves Hax} % por enquanto
+\hypersetup{baseurl={http://www.ime.usp.br/~tassio/apostila.pdf},
+pdftitle={Programador Web},
+pdfauthor={Vinícius Alves Hax},
+pdfkeywords={PHP, HTML, CSS, Programação, Web},
+pdflang={pt-BR (Portuguese)},
+unicode=true}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\clearpage
 %    \input{00-sobre}
-    \clearpage
+\clearpage
 %    \input{thanks}\clearpage
     %\begin{footnotesize}
-    \tableofcontents
+\tableofcontents
     %\end{footnotesize}
-    \clearpage
+\clearpage
 % Informática Básica
 %    \input{01-informatica}
 % Implementação de Interface Web
-    \input{02-implementacao-interfaces-web}
+\input{02-implementacao-interfaces-web}
 % Lógica de Programação
-    \input{03-logica-programacao}
+\input{03-logica-programacao}
 % Implementação de sites e aplicativos
-    \input{04-implementacao-sites-aplicativos}
-    \newpage
-    \appendix
+\input{04-implementacao-sites-aplicativos}
+\newpage
+\appendix
 %    \input{fdl-1.3}
-    \newpage
-    \printindex%
-    \addcontentsline{toc}{section}{Índice Remissivo}
-    \newpage
-    \bibliographystyle{babalpha}
-    \cleardoublepage \phantomsection
-    \addcontentsline{toc}{section}{Referências}
-    \bibliography{thebib}
-    \end{document}
+\newpage
+\printindex%
+\addcontentsline{toc}{section}{Índice Remissivo}
+\newpage
+\bibliographystyle{babalpha}
+\cleardoublepage \phantomsection
+\addcontentsline{toc}{section}{Referências}
+\bibliography{thebib}
+\end{document}
